@@ -1,10 +1,7 @@
 /* 通用样式 头部和尾部 */
-* {
-  color: #fff;
-  font-size: 100%;
-}
 html,body  {
   font-size: 100%;
+  color: #fff;
 }
 /* 头部 */
 #header {
