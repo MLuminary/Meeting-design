@@ -1,4 +1,11 @@
 /* 首页样式 */
+#main-area {
+  font-size: 1rem;
+}
+/* 第一板块 */
+.ht_section_0 {
+  overflow: hidden;
+}
 .ht_section_0 .ht_bg_box{
   display: block;
   position: absolute;
@@ -10,4 +17,38 @@
   background-position: top center;
   background-size: cover;
   background-image: url('../assets/index_bg@3x.png');
+  z-index: -233;
+}
+
+@media screen and (max-width: 768px) {
+  html,body{
+    font-size: 80%;
+  }
+  .ht_section_0 .ht_section_0_info {
+    padding-top: 0px !important;
+  }
+  .ht_section_0_info .row {
+    margin-top: 10px !important;
+  }
+}
+
+.ht_section_0 .ht_section_0_info {
+  padding: 120px 0;
+}
+.ht_section_0_info .row {
+  margin-top: 20px;
+}
+.info_logo img {
+  width: 20rem;
+}
+.info_title h1{
+  font-size: 2rem;
+}
+
+
+
+.ht_section_1 {
+  overflow: hidden;
+  background-color: #020115;
+  height: 1000px;
 }
