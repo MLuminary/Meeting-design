@@ -2,14 +2,11 @@
 #main-area {
   font-size: 1rem;
 }
-h1 {
-  font-size: 2rem;
-}
 /* 第一板块 */
 .ht_section_0 {
   overflow: hidden;
 }
-.ht_section_0 .ht_bg_box{
+.ht_section_0 .ht_bg_box {
   display: block;
   position: absolute;
   left: 0;
@@ -24,7 +21,8 @@ h1 {
 }
 
 @media screen and (max-width: 768px) {
-  html,body{
+  html,
+  body {
     font-size: 80%;
   }
   .ht_section_0 .ht_section_0_info {
@@ -49,10 +47,9 @@ h1 {
 .ht_section_1 {
   overflow: hidden;
   background-color: #020115;
-  letter-spacing: .3rem;
+  letter-spacing: 0.3rem;
   padding: 7.5rem 0;
   font-size: 1rem;
-  
 }
 .ht_section_1 h1 {
   font-size: 2.2rem;
@@ -67,15 +64,16 @@ h1 {
 }
 
 .ht_section_1 .row span {
-  color: rgba(255, 255, 255, .6);
+  color: rgba(255, 255, 255, 0.6);
 }
 
 /* 第三板块 */
 .ht_section_2 {
+  overflow: hidden;
   background-color: #fff;
   padding: 6.25rem 0;
-  color: #00040A;
-  letter-spacing: .3rem;
+  color: #00040a;
+  letter-spacing: 0.3rem;
 }
 
 .ht_section_2 .container {
@@ -88,4 +86,81 @@ h1 {
 
 .ht_section_2 .row span {
   color: #000;
+}
+
+/* 第四板块 */
+.ht_section_3 {
+  overflow: hidden;
+  background-color: #fff;
+  padding: 0 0 6.25rem 0;
+  color: #00040a;
+  letter-spacing: 0.3rem;
+}
+
+.ht_section_3 .row + .row {
+  margin-top: 3.5rem;
+}
+.ht_section_3 .row img {
+  margin-bottom: 1rem;
+}
+
+/* 第五版块 */
+.ht_section_4 {
+  overflow: hidden;
+  background-color: #020115;
+  padding: 6.25rem 0;
+}
+
+.ht_section_4 .row .line {
+  height: 0.3125rem;
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
+.ht_section_4 .row .dark {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.ht_section_4 .col-md-5 .letterspace {
+  letter-spacing: 0.3rem;
+}
+
+.ht_section_4 .row .col-md-5 h1 {
+  margin-bottom: 3rem;
+}
+
+.ht_section_4 .row .col-md-5 p {
+  margin-top: 2rem;
+}
+
+.ht_section_4 .row .col-md-5 a {
+  display: block;
+  margin-top: 2.2rem;
+}
+
+.ht_section_4 .row .col-md-6 h3 {
+  padding: 15px;
+  background-color: #454545;
+  border-radius: 6px;
+}
+
+.ht_section_4 .col-md-6 .content {
+  overflow-x:hidden;
+  height: 300px; 
+}
+
+.ht_section_4 .col-md-6 .content .item {
+  background-color: #454545;
+  padding: 15px;
+  margin-top: 5px;
+}
+
+.ht_section_4 .content .item .info{
+  font-size: .8rem;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.ht_section_4 .content .item .col-xs-4{
+  font-size: .6rem;
+  color: rgba(255, 255, 255, 0.8);
+  text-align: center;
 }
