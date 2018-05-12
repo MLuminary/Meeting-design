@@ -78,3 +78,40 @@
 #main-content .hotel .hih:hover {
   background-image: url(../../../assets/hih-hover.png);
 }
+
+
+#main-content .meeting .row {
+  margin:4rem 0;
+}
+
+
+#main-content .meeting .col-sm-7{
+  padding: 0;
+  letter-spacing: .1rem;
+}
+
+#main-content .meeting .loc {
+  font-weight: bold;
+  margin-top: 2rem;
+}
+
+#main-content .meeting .loc-detail {
+  font-size: .8rem;
+  color: #2A2A2A;
+}
+
+#main-content .meeting .msg {
+  color: #7B7B7B;
+  margin-top: 2rem;
+}
+
+#main-content .meeting .row .title {
+  margin-top: 4rem;
+}
+
+#main-content .meeting .row .info{
+  color: #7B7B7B;
+  margin-bottom: 5rem;
+
+}
+

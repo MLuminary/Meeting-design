@@ -64,10 +64,10 @@
     <div class="container-fluid">
       <div class="row nav-list">
         <div class="col-xs-3 text-right">
-          <a data-set="meeting" href="javascript:;">会场</a>
+          <a class="meeting-a" data-set="meeting" href="javascript:;">会场</a>
         </div>
         <div class="col-xs-3 active">
-          <a data-set="hotel" href="javascript:;">酒店</a>
+          <a class="hotel-a" data-set="hotel" href="javascript:;">酒店</a>
         </div>
       </div>
       <div class="container hotel">
@@ -82,22 +82,22 @@
         <div class="row mgm hover-img"></div>
         <div class="row hih hover-img"></div>
       </div>
-      <div class="container meeting active">
+      <div class="container meeting">
         <div class="row">
           <div class="col-sm-7">
             <h2>会议场地</h2>
-            <p>盘龙山庄国际酒店</p>
-            <p>湘潭市岳塘区河东大道河东红旗大道1号</p>
-            <p>盘龙山庄大酒店地处湘潭市河东新城中心，紧靠湘潭商业中心建设路口，与湘潭市行政中心隔路相望，紧连107国道、320国道，到湘潭火车站仅10分钟车程，距黄花国际机场仅50分钟车程。</p>
+            <p class="loc">盘龙山庄国际酒店</p>
+            <p class="loc-detail">湘潭市岳塘区河东大道河东红旗大道1号</p>
+            <p class="msg">盘龙山庄大酒店地处湘潭市河东新城中心，紧靠湘潭商业中心建设路口，与湘潭市行政中心隔路相望，紧连107国道、320国道，到湘潭火车站仅10分钟车程，距黄花国际机场仅50分钟车程。</p>
           </div>
         </div>
         <div class="row">
           <img class="img-responsive" src="../assets/pl-img.png" alt="">
         </div>
         <div class="row">
-          <h2>会场地图</h2>
-          <p>主要会场所在的楼层平面图</p>
-          <img class="img-responsive" src="../assets/map.png" alt="">
+          <h2 class="title">会场地图</h2>
+          <p class="info">主要会场所在的楼层平面图</p>
+          <img class="img-responsive block-center" src="../assets/map.png" alt="">
         </div>
       </div>
     </div>
@@ -124,25 +124,36 @@
   <script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
     crossorigin="anonymous"></script>
   <script>
-    //自适应
-    var ImgWidth = 1640,
-      ImgHeight = 588;
-
-    var currentHeight = $('.hover-img').width() / ImgWidth * ImgHeight;
-    $('.hover-img').height(currentHeight);
     $(window).resize(function () {
+      getImgHoverHeight()
+    })
+    //会场or酒店
+    $('.nav-list a').click(function () {
+      $(this).parent().addClass('active').siblings().removeClass('active');
+      var findStr = $(this).data('set');
+      $('.' + findStr).addClass('active').siblings().removeClass('active');
+      getImgHoverHeight()
+    })
+
+    function getImgHoverHeight() {
+      //自适应
       var ImgWidth = 1640,
         ImgHeight = 588;
 
       var currentHeight = $('.hover-img').width() / ImgWidth * ImgHeight;
       $('.hover-img').height(currentHeight);
-    })
-    //会场or酒店
-    $('.nav-list a').click(function () {
-      $(this).parent().addClass('active').siblings().removeClass('active')
-      var findStr = $(this).data('set');
-      $('.' + findStr).addClass('active')
-    })
+    }
+    
+    //获取需要展示的信息的内容
+    var type = window.location.search.split('?')[1].split('=')[1];
+    if(type == 1) {
+      $('.hotel').addClass('active');
+      $('.hotel-a').addClass('active')
+      getImgHoverHeight();
+    }else{
+      $('.meeting').addClass('active');
+      $('.meeting-a').addClass('active');
+    }
 
   </script>
 </body>
