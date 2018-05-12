@@ -1,0 +1,56 @@
+#main-content .row {
+  margin: 4rem 0;
+}
+
+#main-content .carousel-box {
+  position: relative;
+}
+
+#main-content .carousel-box .title {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 30%;
+  text-align: center;
+}
+
+.nav-list a{
+  font-size: 1.2rem;
+  color: #525252;
+  margin: 0 2rem;
+}
+
+.nav-list a:hover {
+  color: #000;
+}
+
+.nav-list a.active {
+  color: #000;
+}
+
+.item-box {
+  color: #000;
+  border: 1px solid #DCDCDC;
+  padding: 0;
+  height: 400px;
+}
+.item-box p {
+  margin-bottom: 1rem;
+}
+.item-box .message {
+  padding: 0 2rem;
+  margin-top: 2rem !important;
+}
+
+.item-box .time {
+  color: rgba(0, 0, 0, .5);
+  font-size: 1.3rem;
+}
+.item-box .title {
+  letter-spacing: .2rem;
+}
+.item-box .info {
+  color: rgba(0, 0, 0, .5);
+  font-weight: bold;
+  font-size: .9rem;
+}

@@ -1,5 +1,6 @@
 /* 通用样式 头部和尾部 */
-html,body  {
+html,
+body {
   font-size: 100%;
   color: #fff;
 }
@@ -7,10 +8,13 @@ h1 {
   font-size: 2rem;
 }
 h2 {
-  font-size: 1.875rem
+  font-size: 1.875rem;
 }
 h3 {
   font-size: 1.5rem;
+}
+h4 {
+  font-size: 1.2rem;
 }
 
 /* 头部 */
@@ -47,13 +51,21 @@ h3 {
 }
 
 @media screen and (max-width: 768px) {
+  html,
+  body {
+    font-size: 80%;
+  }
   .navbar-collapse {
     background-color: rgba(255, 255, 255, 0.7);
   }
 }
+@media screen and (max-width: 400px) {
+  html,body {
+    font-size: 60%;
+  }
+}
 
 @media screen and (min-width: 768px) {
-
   .navbar-default .navbar-nav > li > a:hover {
     color: #000 !important;
   }
@@ -62,7 +74,7 @@ h3 {
     line-height: 50px;
     height: 80px;
   }
-  
+
   .navbar li.active a {
     background-color: rgba(255, 255, 255, 0.6) !important;
     color: #000 !important;
@@ -73,20 +85,16 @@ h3 {
   }
 }
 
-
-
-
-
 /* 尾部 */
 #footer {
-  background-color:  #2B2D2D;
+  background-color: #2b2d2d;
   padding: 5rem;
 }
 #footer .info {
   line-height: 25px;
 }
 #footer p {
-  font-size: .6rem;
+  font-size: 0.6rem;
   color: rgba(255, 255, 255, 0.8);
 }
 #footer .title {
