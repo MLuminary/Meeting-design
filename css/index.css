@@ -103,6 +103,9 @@
 .ht_section_3 .row img {
   margin-bottom: 1rem;
 }
+.ht_section_3 a {
+  color: #00040a;
+}
 
 /* 第五版块 */
 .ht_section_4 {
@@ -144,8 +147,8 @@
 }
 
 .ht_section_4 .col-md-6 .content {
-  overflow-x:hidden;
-  height: 300px; 
+  overflow-x: hidden;
+  height: 300px;
 }
 
 .ht_section_4 .col-md-6 .content .item {
@@ -154,13 +157,55 @@
   margin-top: 5px;
 }
 
-.ht_section_4 .content .item .info{
-  font-size: .8rem;
+.ht_section_4 .content .item .info {
+  font-size: 0.8rem;
   color: rgba(255, 255, 255, 0.8);
 }
 
-.ht_section_4 .content .item .col-xs-4{
-  font-size: .6rem;
+.ht_section_4 .content .item .col-xs-4 {
+  font-size: 0.6rem;
   color: rgba(255, 255, 255, 0.8);
   text-align: center;
+}
+
+/* 第六板块 */
+.ht_section_5 {
+  background-color: #fff;
+  padding: 6.25rem 0;
+}
+
+.ht_section_5 .row .col-md-3 {
+  padding: 30px;
+  background-color: #282828;
+}
+
+.ht_section_5 .col-md-3 input {
+  height: 3rem;
+  width: 85%;
+  outline: none;
+  border: 0;
+  margin-top: 5px;
+  padding: 5px;
+  color: rgba(0, 0, 0);
+}
+
+.ht_section_5 .col-md-3 input::-ms-input-placeholder {
+  color: rgba(0, 0, 0, 0.28);
+}
+.ht_section_5 .col-md-3 input::-webkit-input-placeholder {
+  color: rgba(0, 0, 0, 0.28);
+}
+
+.ht_section_5 .col-md-3 button {
+  border: 0;
+  background-color: rgba(206, 77, 42, 0.88);
+  color: #fff;
+  font-size: 0.8rem;
+  margin-top: 15px;
+  padding: 15px 25px;
+}
+
+.ht_section_5 .col-md-4 {
+  color: #746a6a;
+  letter-spacing: 0.2rem;
 }

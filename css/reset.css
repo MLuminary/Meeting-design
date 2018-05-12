@@ -59,3 +59,20 @@ h3 {
     color: #fff !important;
   }
 }
+
+/* 尾部 */
+#footer {
+  background-color:  #2B2D2D;
+  padding: 5rem;
+}
+#footer .info {
+  line-height: 25px;
+}
+#footer p {
+  font-size: .6rem;
+  color: rgba(255, 255, 255, 0.8);
+}
+#footer .title {
+  font-size: 1rem;
+  color: #fff;
+}
