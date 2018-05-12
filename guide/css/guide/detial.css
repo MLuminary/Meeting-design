@@ -1,0 +1,80 @@
+#main-content {
+  color: #000;
+}
+
+#main-content .container-fluid .container {
+  display: none;
+}
+#main-content .container-fluid .container.active {
+  display: block;
+}
+
+#main-content .nav-list{
+  margin: 2rem 0;
+  background-color: #F6F6F6;
+  padding: 2rem;
+}
+
+#main-content .nav-list a {
+  color: #343434;
+  letter-spacing: .2rem;
+  text-decoration: none;
+}
+
+#main-content .nav-list a:hover {
+  color: #000;
+  font-weight: bold;
+}
+
+#main-content .nav-list .col-xs-3.active a {
+  color: #000;
+  font-weight: bold;
+}
+
+#main-content .hotel {
+  letter-spacing: .1rem;
+}
+
+#main-content .hotel .title {
+  font-weight: bold;
+}
+
+#main-content .hotel p {
+  margin-top: 1.5rem;
+}
+
+#main-content .hotel .msg {
+  font-size: .9rem;
+  color:#7B7B7B;
+}
+
+#main-content .hotel .row {
+  margin: 2rem 0;
+}
+#main-content .hotel .hover-img {
+  cursor: pointer;
+}
+
+
+#main-content .hotel .pl {
+  background: url(../../../assets/pl.png) no-repeat center center;
+  background-size: cover;
+}
+
+#main-content .hotel .pl:hover {
+  background-image: url(../../../assets/pl-hover.png);
+}
+#main-content .hotel .mgm {
+  background: url(../../../assets/mgm.png) no-repeat center center;
+  background-size: cover;
+}
+#main-content .hotel .mgm:hover {
+  background-image: url(../../../assets/mgm-hover.png);
+}
+#main-content .hotel .hih {
+  background: url(../../../assets/hih.png) no-repeat center center;
+  background-size: cover;
+}
+#main-content .hotel .hih:hover {
+  background-image: url(../../../assets/hih-hover.png);
+}

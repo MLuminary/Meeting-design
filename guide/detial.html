@@ -7,8 +7,8 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
     crossorigin="anonymous">
-  <link rel="stylesheet" href="css/reset.css">
-  <link rel="stylesheet" href="css/guide.css">
+  <link rel="stylesheet" href="../css/reset.css">
+  <link rel="stylesheet" href="css/guide/detial.css">
   <title>指南</title>
 </head>
 
@@ -26,7 +26,7 @@
             <span class="icon-bar"></span>
           </button>
           <a class="navbar-brand" href="#">
-            <img src="assets/LOGO.png" alt="logo">
+            <img src="../assets/LOGO.png" alt="logo">
           </a>
         </div>
 
@@ -34,19 +34,19 @@
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
           <ul class="nav navbar-nav">
             <li>
-              <a href="./index.html">首页</a>
+              <a href="../index.html">首页</a>
             </li>
             <li>
-              <a href="./dynamic.html">动态</a>
+              <a href="../dynamic.html">动态</a>
             </li>
             <li>
-              <a href="./material.html">资料</a>
+              <a href="../material.html">资料</a>
             </li>
             <li>
-              <a href="./schedule.html">日程</a>
+              <a href="../schedule.html">日程</a>
             </li>
             <li class="active">
-              <a href="./guide.html">指南</a>
+              <a href="../guide.html">指南</a>
             </li>
           </ul>
           <ul class="nav navbar-nav navbar-right">
@@ -62,40 +62,42 @@
   </div>
   <div id="main-content">
     <div class="container-fluid">
-      <div class="row">
-        <img src="./assets/guide_bg.png" alt="">
+      <div class="row nav-list">
+        <div class="col-xs-3 text-right">
+          <a data-set="meeting" href="javascript:;">会场</a>
+        </div>
+        <div class="col-xs-3 active">
+          <a data-set="hotel" href="javascript:;">酒店</a>
+        </div>
       </div>
-      <div class="container">
-        <div class="col-md-3">
-          <h2>盘龙山庄</h2>
+      <div class="container hotel">
+        <div class="row">
+          <div class="col-sm-7">
+            <h2>酒店推荐</h2>
+            <p class="title">协议优惠酒店以及临近酒店推荐</p>
+            <p class="msg">盘龙山庄大酒店以及下列酒店为本次大会协议酒店，参会预定可享协议特惠价格。房间数量有限，可预订8月17-22日的房间。预付成功后不退款，不可变更和取消。</p>
+          </div>
         </div>
-        <div class="col-md-6">
-          <p>湘潭盘龙山庄大酒店位于河东大道，设有健身中心、土耳其浴室以及内部酒吧。酒店距离湘潭东长途汽车站有10分钟车程，距离湘潭火车站有20分钟车程。</p>
-          <p>客房配有空调、带拖鞋、浴袍、吹风机和浴缸的浴室、冰箱、咖啡机、迷你吧、平板有线电视、电话、闹钟以及书桌、保险箱和熨烫设施等额外设施。</p>
-          <p>酒店设有自动取款机，客人还可在酒店内打网球。</p>
-          <img class="img-responsive" src="./assets/guide_msg_pic1.png" alt="">
-          <p>盘龙山庄坐落在长株潭两型社会综合配套改革试验区核心地带。</p>
-          <p>酒店周边景点众多：到韶山毛泽东故居、乌石彭德怀故居仅40分钟车程，宁乡刘少奇故居、双峰曾国藩故居、南岳衡山、湘乡水府庙等景区也均在1.5小时车程以内。</p>
-          <div class="row">
-            <div class="col-xs-6">
-              <img class="img-responsive" src="./assets/guide_msg_pic2.png" alt="">
-            </div>
-            <div class="col-xs-6">
-              <img class="img-responsive" src="./assets/guide_msg_pic3.png" alt="">
-            </div>
+        <div class="row pl hover-img"></div>
+        <div class="row mgm hover-img"></div>
+        <div class="row hih hover-img"></div>
+      </div>
+      <div class="container meeting active">
+        <div class="row">
+          <div class="col-sm-7">
+            <h2>会议场地</h2>
+            <p>盘龙山庄国际酒店</p>
+            <p>湘潭市岳塘区河东大道河东红旗大道1号</p>
+            <p>盘龙山庄大酒店地处湘潭市河东新城中心，紧靠湘潭商业中心建设路口，与湘潭市行政中心隔路相望，紧连107国道、320国道，到湘潭火车站仅10分钟车程，距黄花国际机场仅50分钟车程。</p>
           </div>
-          <p>周边绿化率达到90%，是差旅度假极佳选择的园林式酒店。 </p>
         </div>
-        <div class="col-md-3">
-          <div class="row">
-            <a href="./guide/detial.html?type=1">现在预订</a>
-          </div>
-          <div class="row gg">
-            <a href="./guide/detial.html?type=0">接机服务</a>
-          </div>
-          <div class="row text-center">
-            <p class="tel">Tel:86 010 8473712</p>
-          </div>
+        <div class="row">
+          <img class="img-responsive" src="../assets/pl-img.png" alt="">
+        </div>
+        <div class="row">
+          <h2>会场地图</h2>
+          <p>主要会场所在的楼层平面图</p>
+          <img class="img-responsive" src="../assets/map.png" alt="">
         </div>
       </div>
     </div>
@@ -121,6 +123,28 @@
   <script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
     crossorigin="anonymous"></script>
+  <script>
+    //自适应
+    var ImgWidth = 1640,
+      ImgHeight = 588;
+
+    var currentHeight = $('.hover-img').width() / ImgWidth * ImgHeight;
+    $('.hover-img').height(currentHeight);
+    $(window).resize(function () {
+      var ImgWidth = 1640,
+        ImgHeight = 588;
+
+      var currentHeight = $('.hover-img').width() / ImgWidth * ImgHeight;
+      $('.hover-img').height(currentHeight);
+    })
+    //会场or酒店
+    $('.nav-list a').click(function () {
+      $(this).parent().addClass('active').siblings().removeClass('active')
+      var findStr = $(this).data('set');
+      $('.' + findStr).addClass('active')
+    })
+
+  </script>
 </body>
 
 </html>
