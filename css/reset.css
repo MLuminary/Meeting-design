@@ -12,11 +12,13 @@ h2 {
 h3 {
   font-size: 1.5rem;
 }
+
 /* 头部 */
 #header {
   position: relative;
   height: 80px;
   z-index: 2333;
+  border: 1px solid #d5d5d5;
 }
 .navbar-default {
   background-color: rgba(255, 255, 255, 0);
@@ -31,6 +33,10 @@ h3 {
   margin-top: 25px;
 }
 
+.navbar-default .navbar-nav > li > a {
+  color: #d5d5d5;
+}
+
 .navbar li a:hover {
   color: #fff !important;
 }
@@ -39,6 +45,7 @@ h3 {
   border: 0;
   color: #fff;
 }
+
 @media screen and (max-width: 768px) {
   .navbar-collapse {
     background-color: rgba(255, 255, 255, 0.7);
@@ -46,19 +53,29 @@ h3 {
 }
 
 @media screen and (min-width: 768px) {
+
+  .navbar-default .navbar-nav > li > a:hover {
+    color: #000 !important;
+  }
+
   .navbar li a {
     line-height: 50px;
     height: 80px;
   }
-
-  .navbar-default .navbar-nav > li > a {
-    color: rgba(255, 255, 255, 0.7);
-  }
+  
   .navbar li.active a {
-    background-color: rgba(255, 255, 255, 0) !important;
-    color: #fff !important;
+    background-color: rgba(255, 255, 255, 0.6) !important;
+    color: #000 !important;
+  }
+
+  .navbar-right a {
+    color: rgb(51, 123, 143) !important;
   }
 }
+
+
+
+
 
 /* 尾部 */
 #footer {
