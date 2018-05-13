@@ -1,3 +1,8 @@
+/* 轮播图按钮置顶 */
+#myCarousel .left,#myCarousel .right {
+  z-index: 2333;  
+}
+
 #main-content .row {
   margin: 4rem 0;
 }
