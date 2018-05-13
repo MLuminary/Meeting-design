@@ -56,6 +56,17 @@
   width: 20rem;
 }
 
+.ht_section_0_info {
+  transform: translatey(-200px);
+  opacity: 0;
+  transition: .8s all;
+}
+
+.ht_section_0_info.show {
+  transform: translatey(0);
+  opacity: 1;
+}
+
 /* 第二板块 */
 .ht_section_1 {
   overflow: hidden;
@@ -74,6 +85,11 @@
 
 .ht_section_1 .row {
   margin: 30px 0;
+  opacity: 0;
+  transition: .8s;
+}
+.ht_section_1 .row.show{
+  opacity: 1;
 }
 
 .ht_section_1 .row span {
@@ -115,6 +131,11 @@
 }
 .ht_section_3 .row img {
   margin-bottom: 1rem;
+  transition: .8s;
+  opacity: 0;
+}
+.ht_section_3 .row img.show {
+  opacity: 1;
 }
 .ht_section_3 a {
   color: #00040a;
@@ -125,6 +146,13 @@
   overflow: hidden;
   background-color: #020115;
   padding: 6.25rem 0;
+}
+.ht_section_4 .row {
+  opacity: 0;
+  transition: .8s;
+}
+.ht_section_4 .row.show {
+  opacity: 1;
 }
 
 .ht_section_4 .row .line {
@@ -185,6 +213,13 @@
 .ht_section_5 {
   background-color: #fff;
   padding: 6.25rem 0;
+}
+.ht_section_5 .row {
+  opacity: 0;
+  transition: .8s;
+}
+.ht_section_5 .row.show {
+  opacity: 1;
 }
 
 .ht_section_5 .row .col-md-3 {
