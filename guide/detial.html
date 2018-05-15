@@ -63,14 +63,14 @@
   <div id="main-content">
     <div class="container-fluid">
       <div class="row nav-list">
-        <div class="col-xs-3 text-right">
+        <div class="col-xs-1 text-right">
           <a class="meeting-a" data-set="meeting" href="javascript:;">会场</a>
         </div>
-        <div class="col-xs-3 active">
+        <div class="col-xs-1 active">
           <a class="hotel-a" data-set="hotel" href="javascript:;">酒店</a>
         </div>
       </div>
-      <div class="container hotel">
+      <div class="container-fluid hotel">
         <div class="row">
           <div class="col-sm-7">
             <h2>酒店推荐</h2>
@@ -82,7 +82,7 @@
         <div class="row mgm hover-img"></div>
         <div class="row hih hover-img"></div>
       </div>
-      <div class="container meeting">
+      <div class="container-fluid meeting">
         <div class="row">
           <div class="col-sm-7">
             <h2>会议场地</h2>
@@ -92,12 +92,12 @@
           </div>
         </div>
         <div class="row">
-          <img class="img-responsive" src="../assets/pl-img.png" alt="">
+          <img class="img-responsive center-block" src="../assets/pl-img.png" alt="">
         </div>
         <div class="row">
           <h2 class="title">会场地图</h2>
           <p class="info">主要会场所在的楼层平面图</p>
-          <img class="img-responsive block-center" src="../assets/map.png" alt="">
+          <img class="img-responsive center-block" src="../assets/map.png" alt="">
         </div>
       </div>
     </div>
@@ -112,10 +112,12 @@
           </p>
         </div>
         <div class="col-md-4 col-md-offset-1">
-          <p class="title">联系我们</p>
-          <p>邮箱：xtusme@163.com</p>
-          <p>策划人联系：13786268176</p>
-          <p>电话：0731-58292209</p>
+          <div class="row center-block">
+            <p class="title">联系我们</p>
+            <p>邮箱：xtusme@163.com</p>
+            <p>策划人联系：13786268176</p>
+            <p>电话：0731-58292209</p>
+          </div>
         </div>
       </div>
     </div>
@@ -143,14 +145,14 @@
       var currentHeight = $('.hover-img').width() / ImgWidth * ImgHeight;
       $('.hover-img').height(currentHeight);
     }
-    
+
     //获取需要展示的信息的内容
     var type = window.location.search.split('?')[1].split('=')[1];
-    if(type == 1) {
+    if (type == 1) {
       $('.hotel').addClass('active');
       $('.hotel-a').addClass('active')
       getImgHoverHeight();
-    }else{
+    } else {
       $('.meeting').addClass('active');
       $('.meeting-a').addClass('active');
     }

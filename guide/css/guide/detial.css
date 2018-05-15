@@ -2,10 +2,10 @@
   color: #000;
 }
 
-#main-content .container-fluid .container {
+#main-content .container-fluid .container-fluid {
   display: none;
 }
-#main-content .container-fluid .container.active {
+#main-content .container-fluid .container-fluid.active {
   display: block;
 }
 
@@ -26,7 +26,7 @@
   font-weight: bold;
 }
 
-#main-content .nav-list .col-xs-3.active a {
+#main-content .nav-list .col-xs-1.active a {
   color: #000;
   font-weight: bold;
 }
